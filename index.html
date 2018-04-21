@@ -25,22 +25,37 @@ for (var i = 0; i < document.myform.os0.length; i++){
 if(radG1 == "1.00")
  {
  document.myform.amount.value = '1.00';
- document.myform.item_number.value = "WF-1-00";
+ document.myform.item_number.value = "BL-1-00";
  }
-else if(radG1 == "25.00")
+else if(radG1 == "5.00")
  {
- document.myform.amount.value = '25.00';
- document.myform.item_number.value = "WF-25-00";
+ document.myform.amount.value = '5.00';
+ document.myform.item_number.value = "BL-05-00";
  }
-else if(radG1 == "50.00")
+ else if(radG1 == "10.00")
+ {
+ document.myform.amount.value = '10.00';
+ document.myform.item_number.value = "BL-10-00";
+ }
+ else if(radG1 == "20.00")
+ {
+ document.myform.amount.value = '20.00';
+ document.myform.item_number.value = "BL-20-00";
+ }
+ else if(radG1 == "50.00")
  {
  document.myform.amount.value = '50.00';
- document.myform.item_number.value = "WF-50-00";
+ document.myform.item_number.value = "BL-50-00";
+ }
+ else if(radG1 == "100.00")
+ {
+ document.myform.amount.value = '100.00';
+ document.myform.item_number.value = "BL-100-00";
  }
 else if(radG1 == "Other")
  {
  document.myform.amount.value = '0.00';
- document.myform.item_number.value = "WF-0-00";
+ document.myform.item_number.value = "BL-0-00";
  }     
 }
 // -->
@@ -72,16 +87,16 @@ $2.00
 <input name="os0" type="radio" value="5.00"> 
 $5.00
 <br>
-<input name="os0" type="radio" value="25.00"> 
+<input name="os0" type="radio" value="10.00"> 
 $10.00
 <br>
-<input name="os0" type="radio" value="25.00"> 
+<input name="os0" type="radio" value="20.00"> 
 $20.00
 <br>
-<input name="os0" type="radio" value="25.00"> 
+<input name="os0" type="radio" value="50.00"> 
 $50.00
 <br>
-<input name="os0" type="radio" value="25.00"> 
+<input name="os0" type="radio" value="100.00"> 
 $100.00
 <br>
 
@@ -99,7 +114,7 @@ Other - Enter a custom amount!
 <!-- Replace "business" value with your PayPal Email Address or your Merchant Account ID -->
 <input type="hidden" name="business" value="blasstapp@gmail.com">
 <input type="hidden" name="item_number">
-<input type="hidden" name="item_name" value="Widget Fund"> 
+<input type="hidden" name="item_name" value="Blasst App"> 
 <input type="hidden" name="amount"> 
 <input type="hidden" name="no_shipping" value="2">
 <input type="hidden" name="tax" value="0"> 
