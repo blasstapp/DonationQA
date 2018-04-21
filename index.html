@@ -63,33 +63,41 @@ Blasst Donation Example
 <!-- Start of Donation Form -->
 <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post" name="myform">
 <!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable. -->
-<input type="hidden" name="cpp_header_image" value="http://img.pagecloud.com/wqnTcyjwwvdR_4hBfbuiIUPj0fM=/104x0/blasst/images/BlasstLogo-ID-093f0126-c208-47d2-d00a-3051932088ed.png">
+<input type="hidden" name="cpp_header_image" value="images/BlasstLogo.png">
 <input type="hidden" name="on0" value="Donation Amount"> 
 
 <input name="os0" type="radio" value="1.00"> 
-$1.00
-
-<br><br>
+$2.00
+<br>
+<input name="os0" type="radio" value="5.00"> 
+$5.00
+<br>
 <input name="os0" type="radio" value="25.00"> 
-$25.00
-
-<br><br>
-<input name="os0" type="radio" value="50.00"> 
+$10.00
+<br>
+<input name="os0" type="radio" value="25.00"> 
+$20.00
+<br>
+<input name="os0" type="radio" value="25.00"> 
 $50.00
+<br>
+<input name="os0" type="radio" value="25.00"> 
+$100.00
+<br>
 
 <br><br>
 <input name="os0" type="radio" value="Other"> 
-Other - Please enter amount on the PayPal Screen
+Other - Enter a custom amount!
 
 <br><br>
 <input type="reset">
 <br><br><br>
 
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" onClick="CalculateOrder(this.form)" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="image" src="images/Donate.png" border="0" name="submit" onClick="CalculateOrder(this.form)" alt="Make payments with PayPal - it's fast, free and secure!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 <input type="hidden" name="cmd" value="_donations">
 <!-- Replace "business" value with your PayPal Email Address or your Merchant Account ID -->
-<input type="hidden" name="business" value="your email address">
+<input type="hidden" name="business" value="blasstapp@gmail.com">
 <input type="hidden" name="item_number">
 <input type="hidden" name="item_name" value="Widget Fund"> 
 <input type="hidden" name="amount"> 
@@ -98,34 +106,14 @@ Other - Please enter amount on the PayPal Screen
 <input type="hidden" name="currency_code" value="USD">
 <input type="hidden" name="lc" value="US">
 <!-- Replace value with the web page you want the customer to return to after a successful transaction -->
-<input type="hidden" name="return" value="http://www.yourwebsite.com/ThankYou.html">
+<input type="hidden" name="return" value="https://blasstdonation.azurewebsites.net/thanks.html">
 <!-- Replace value with the web page you want the customer to return to after item cancellation -->
-<input type="hidden" name="cancel_return" value="http://www.yourwebsite.com/Cancel.html">
+<input type="hidden" name="cancel_return" value="https://blasstdonation.azurewebsites.net/cancel.html">
 <input type="hidden" name="button_subtype" value="products">
 <input type="hidden" name="no_note" value="0">
 <input type="hidden" name="cn" value="Add special instructions to the seller:">
 <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
 </form> 
-<!-- End of Donation Form -->
-
-
-
-<!-- END BUTTON EXAMPLES -->
-
-
-
-<!-- END SAMPLE CODE SECTION -->
-
-<br><br>
-
-
-<br><br><br><br>
-<hr align="left" width="50%" noshade>
-<br><br>
-NOTES:
-<br>
-In order to test the code, you must replace the &quot;business&quot; value variable with your PayPal Email Address or your Merchant Account ID.
-
 
 </body>
 </html>
