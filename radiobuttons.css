@@ -50,7 +50,7 @@
   height: 40px;
   width: 40px;
   position: absolute;
-  content: '✔';
+  content: 'âœ”';
   display: inline-block;
   font-size: 26.66667px;
   text-align: center;
@@ -68,7 +68,16 @@
 }
 .option-input.radio {
   border-radius: 50%;
+  clear: left;
+  float: left;
 }
+
+label {
+	float: left;
+    width: 250px;
+}
+
+
 .option-input.radio::after {
   border-radius: 50%;
 }

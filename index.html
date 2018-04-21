@@ -8,12 +8,9 @@
 
 <link rel="stylesheet" media="all" href="radiobuttons.css" />
 
-<!-- START META TAG SECTION -->
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <meta http-equiv="Content-Language" content="en">
-<!-- END META TAG SECTION -->
-
 
 <!-- Start of Script -->
 <script language="javascript">
@@ -70,46 +67,31 @@ else if(radG1 == "Other")
 </head>
 
 <body>
-
-<!-- START SAMPLE CODE SECTION -->
-
-
-<!-- PARAGRAPH 1 -->
-Blasst Donation Example
-
-<br><br>
-
 <!-- Start of Donation Form -->
 <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post" name="myform">
 <!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable. -->
 <input type="hidden" name="cpp_header_image" value="images/BlasstLogo.png">
 <input type="hidden" name="on0" value="Donation Amount"> 
 
+<div id="radios">
 <input name="os0" class="option-input radio" type="radio" value="2.00"> 
-$2.00
-<br>
+<label>$2.00</label>
 <input name="os0" class="option-input radio" type="radio" value="5.00"> 
-$5.00
-<br>
+<label>$5.00</label>
 <input name="os0" class="option-input radio" type="radio" value="10.00"> 
-$10.00
-<br>
+<label>$10.00</label>
 <input name="os0" class="option-input radio" type="radio" value="20.00"> 
-$20.00
-<br>
+<label>$20.00</label>
 <input name="os0" class="option-input radio" type="radio" value="50.00"> 
-$50.00
-<br>
+<label>$50.00</label>
 <input name="os0" class="option-input radio" type="radio" value="100.00"> 
-$100.00
-<br>
+<label>$100.00</label>
 <input name="os0" class="option-input radio" type="radio" value="Other"> 
-Other
+<label>Other</label>
+</div>
 
 <br><br>
 <!--<input type="reset"> -->
-
-
 <input type="image" src="images/Donate.png" border="0" name="submit" onClick="CalculateOrder(this.form)" alt="Make payments with PayPal - it's fast, free and secure!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 <input type="hidden" name="cmd" value="_donations">
