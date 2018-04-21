@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<title>Button Example Code</title>
+
+<!-- START META TAG SECTION -->
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="Content-Language" content="en">
+<!-- END META TAG SECTION -->
+
+
+<!-- Start of Script -->
+<script language="javascript">
+
+function CalculateOrder(form){
+ var radG1;
+ 
+for (var i = 0; i < document.myform.os0.length; i++){
+ if(document.myform.os0[i].checked==true){radG1=document.myform.os0[i].value;}
+}
+
+
+if(radG1 == "1.00")
+ {
+ document.myform.amount.value = '1.00';
+ document.myform.item_number.value = "WF-1-00";
+ }
+else if(radG1 == "25.00")
+ {
+ document.myform.amount.value = '25.00';
+ document.myform.item_number.value = "WF-25-00";
+ }
+else if(radG1 == "50.00")
+ {
+ document.myform.amount.value = '50.00';
+ document.myform.item_number.value = "WF-50-00";
+ }
+else if(radG1 == "Other")
+ {
+ document.myform.amount.value = '0.00';
+ document.myform.item_number.value = "WF-0-00";
+ }     
+}
+// -->
+</script>
+<!-- End of Script -->
+
+
+</head>
+
+<body>
+
+<!-- START SAMPLE CODE SECTION -->
+
+
+<!-- PARAGRAPH 1 -->
+Donation Examples
+
+<br><br>
+
+Using Radio Buttons.
+
+<br><br>
+
+Widget Fund Donations
+
+<br><br>
+
+<!-- Start of Donation Form -->
+<form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post" name="myform">
+<!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable. -->
+<input type="hidden" name="cpp_header_image" value="https://yourwebsite.com/logo.jpg">
+<input type="hidden" name="on0" value="Donation Amount"> 
+
+<input name="os0" type="radio" value="1.00"> 
+$1.00
+
+<br><br>
+<input name="os0" type="radio" value="25.00"> 
+$25.00
+
+<br><br>
+<input name="os0" type="radio" value="50.00"> 
+$50.00
+
+<br><br>
+<input name="os0" type="radio" value="Other"> 
+Other - Please enter amount on the PayPal Screen
+
+<br><br>
+<input type="reset">
+<br><br><br>
+
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" onClick="CalculateOrder(this.form)" alt="Make payments with PayPal - it's fast, free and secure!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="cmd" value="_donations">
+<!-- Replace "business" value with your PayPal Email Address or your Merchant Account ID -->
+<input type="hidden" name="business" value="your email address">
+<input type="hidden" name="item_number">
+<input type="hidden" name="item_name" value="Widget Fund"> 
+<input type="hidden" name="amount"> 
+<input type="hidden" name="no_shipping" value="2">
+<input type="hidden" name="tax" value="0"> 
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="lc" value="US">
+<!-- Replace value with the web page you want the customer to return to after a successful transaction -->
+<input type="hidden" name="return" value="http://www.yourwebsite.com/ThankYou.html">
+<!-- Replace value with the web page you want the customer to return to after item cancellation -->
+<input type="hidden" name="cancel_return" value="http://www.yourwebsite.com/Cancel.html">
+<input type="hidden" name="button_subtype" value="products">
+<input type="hidden" name="no_note" value="0">
+<input type="hidden" name="cn" value="Add special instructions to the seller:">
+<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+</form> 
+<!-- End of Donation Form -->
+
+
+
+<!-- END BUTTON EXAMPLES -->
+
+
+
+<!-- END SAMPLE CODE SECTION -->
+
+<br><br>
+
+
+<br><br><br><br>
+<hr align="left" width="50%" noshade>
+<br><br>
+NOTES:
+<br>
+In order to test the code, you must replace the &quot;business&quot; value variable with your PayPal Email Address or your Merchant Account ID.
+
+
+</body>
+</html>
