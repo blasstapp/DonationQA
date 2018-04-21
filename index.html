@@ -22,10 +22,10 @@ for (var i = 0; i < document.myform.os0.length; i++){
 }
 
 
-if(radG1 == "1.00")
+if(radG1 == "2.00")
  {
- document.myform.amount.value = '1.00';
- document.myform.item_number.value = "BL-1-00";
+ document.myform.amount.value = '2.00';
+ document.myform.item_number.value = "BL-2-00";
  }
 else if(radG1 == "5.00")
  {
@@ -81,7 +81,7 @@ Blasst Donation Example
 <input type="hidden" name="cpp_header_image" value="images/BlasstLogo.png">
 <input type="hidden" name="on0" value="Donation Amount"> 
 
-<input name="os0" type="radio" value="1.00"> 
+<input name="os0" type="radio" value="2.00"> 
 $2.00
 <br>
 <input name="os0" type="radio" value="5.00"> 
@@ -104,6 +104,8 @@ Other - Enter a custom amount!
 
 <br><br>
 <!--<input type="reset"> -->
+
+
 <input type="image" src="images/Donate.png" border="0" name="submit" onClick="CalculateOrder(this.form)" alt="Make payments with PayPal - it's fast, free and secure!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 <input type="hidden" name="cmd" value="_donations">
