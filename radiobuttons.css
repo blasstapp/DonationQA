@@ -50,7 +50,7 @@
   height: 40px;
   width: 40px;
   position: absolute;
-  content: 'âœ”';
+  content: '✔';
   display: inline-block;
   font-size: 26.66667px;
   text-align: center;
@@ -73,7 +73,7 @@
 }
 label {
   float: left;
-  width: 40px;
+  width: 50px;
 }
 
 .option-input.radio::after {
