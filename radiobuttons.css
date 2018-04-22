@@ -71,12 +71,10 @@
   clear: left;
   float: left;
 }
-
 label {
-	float: left;
-    width: 250px;
+  float: left;
+  width: 40px;
 }
-
 
 .option-input.radio::after {
   border-radius: 50%;
