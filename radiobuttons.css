@@ -73,7 +73,8 @@
 }
 label {
   float: left;
-  width: 50px;
+  width: 40px;
+  margin-top: 18px;
 }
 
 .option-input.radio::after {
