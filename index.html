@@ -76,11 +76,6 @@
   clear: left;
   float: left;
 }
-label {
-  float: left;
-  width: 40px;
-  margin-top: 18px;
-}
 
 .option-input.radio::after {
   border-radius: 50%;
@@ -100,7 +95,10 @@ label {
   background: #150811;
   color: #FFFFFF;
 }
- label {
+.labeltext {
+  float: left;
+  width: 40px;
+  margin-top: 18px;
   display: block;
   line-height: 40px;
   color: #ffffff;
@@ -181,19 +179,19 @@ else if(radG1 == "Other")
 
 <table>
 <tr>
-	<td><input name="os0" class="option-input radio" type="radio" value="2.00"><label>$2</label></td>
-	<td><input name="os0" class="option-input radio" type="radio" value="5.00"><label>$5</label></td>
+	<td><input name="os0" class="option-input radio" type="radio" value="2.00"><label class="labeltext">$2</label></td>
+	<td><input name="os0" class="option-input radio" type="radio" value="5.00"><label class="labeltext">$5</label></td>
 </tr>
 <tr>
-	<td><input name="os0" class="option-input radio" type="radio" value="10.00"><label>$10</label></td>
-	<td><input name="os0" class="option-input radio" type="radio" value="20.00"><label>$20</label></td>
+	<td><input name="os0" class="option-input radio" type="radio" value="10.00"><label class="labeltext">$10</label></td>
+	<td><input name="os0" class="option-input radio" type="radio" value="20.00"><label class="labeltext">$20</label></td>
 </tr>
 <tr>
-	<td><input name="os0" class="option-input radio" type="radio" value="50.00"><label>$50</label></td>
-	<td><input name="os0" class="option-input radio" type="radio" value="100.00"><label>$100</label></td>
+	<td><input name="os0" class="option-input radio" type="radio" value="50.00"><label class="labeltext">$50</label></td>
+	<td><input name="os0" class="option-input radio" type="radio" value="100.00"><label class="labeltext">$100</label></td>
 </tr>
 <tr>
-	<td><input name="os0" class="option-input radio" type="radio" value="Other"><label>Other</label></td>
+	<td><input name="os0" class="option-input radio" type="radio" value="Other"><label class="labeltext">Other</label></td>
 	<td></td>
 </tr>
 </table>
