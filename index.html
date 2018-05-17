@@ -86,7 +86,7 @@ label {
   border-radius: 50%;
 }
 
-body {
+.bodymain {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -95,12 +95,12 @@ body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   text-align: center;
 }
-body div {
+.bodydiv {
   padding: 5rem;
   background: #150811;
   color: #FFFFFF;
 }
-body label {
+ label {
   display: block;
   line-height: 40px;
 }
@@ -170,8 +170,8 @@ else if(radG1 == "Other")
 <!-- End of Script -->
 
 </head>
-
 <body>
+<div class="bodymain">
 <!-- Start of Donation Form -->
 <form target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post" name="myform">
 <!-- If using a Business or Company Logo Graphic, include the "cpp_header_image" variable. -->
@@ -222,5 +222,6 @@ else if(radG1 == "Other")
 <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
 </form> 
 
+</div>
 </body>
 </html>
